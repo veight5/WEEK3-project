@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gold;
+    overflow: scroll;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+header {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+
+}
+
+
+header, main, aside, section, footer {
+    margin: 10px;
+    padding: 1px;
+}
+
+header, main, footer {
+    width: calc(100% - 40px);
+
+
+}
+header, footer {
+    height: calc(40vh - 10px);
+    background-color:goldenrod;
+    padding: 5px;
+    border: solid #000000;
+    
+}
+
+footer {
+    display: inline-flexbox;
+    flex-direction: column;
+    font-size: large;
+}
+
+main {
+    height: calc(60vh - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+aside { 
+    width: calc(28% - 10px);
+    height: calc(40% - 10px);
+    background-color:goldenrod;
+    background-size: 80%;
+    padding: 15px;
+}
+
+
+#parentSection {
+    width: calc(100% - 20px);
+    height: calc(80% - 20px);
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 2.5%;
+    text-align: center;
+    overflow: scroll;
+    
+}
+
+#parentSection section, #parentSection article {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 17%;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+#EarthGang {
+    align-items: center;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+#PP2 {
+    border: #000000 double
+}
+
+#paragraph {
+    font-size: xx-large;
+    font-style: italic;
+    align-items: center;
+}
+
+#Title {
+    font-size: xx-large;
+
+}
+
+#RapAlbum {
+    padding: 20px;
+    margin: 10px;
+    float: left
+    ;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    Header {
+        align-items: center;
+        font-size: medium;
+    }
+    header, footer {
+        height: calc(10vh - 10px);
+        background-color: grey;
+
+    }
+    main {
+        height: calc(80vh - 20px);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    aside {
+        height: calc(80vh - 20px);
+        width: calc( 20vw - 20px);
+        font-size: x-large;
+        justify-content: space-evenly;
+    }
+
+    #parentSection {
+        width: calc(80% - 10px);
+        height: calc(100% - 10px);
+        overflow: scroll;
+        
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        
+    }
+
+    header, footer {
+        height: calc(20vh - 10px);
+        background-color: goldenrod;
+
+    }
+    main {
+        height: calc(80vh - 20px);
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+
+    aside {
+        height: calc(40vh - 20px);
+        width: 100%;
+        font-size: medium;
+        
+    }
+
+    Aside h2 {
+        text-align: left;
+        float: left;
+    }
+
+
+    #parentSection {
+        width: calc(60% - 10px);
+        height: calc(100% - 8px);
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5%;
+        overflow: scroll;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 425px) {
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-color: whitesmoke;
+    }
+
+    Main {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    Header {
+        font-size: large;
+    }
+
+    header, footer {
+        height: calc(30vh - 10px);
+        background-color:skyblue;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    main {
+        height: calc(80vh - 60px);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    aside {
+        height: calc(70vh - 20px);
+        width: 20%;
+        font-size: large;
+    }
+
+    #parentSection {
+        width: calc(80% - 10px);
+        height: calc(100% - 10px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5%;
+        overflow: scroll;
+        font-size: medium;
+        font-style: oblique;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    html, body {
+        width: 100vw;
+        height: 100vh;
+        background-color: gold;
+    }
+
+    Main {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    Header {
+        font-size: large;
+    }
+
+    header, footer {
+        height: calc(30vh - 10px);
+        background-color:skyblue;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    main {
+        height: calc(80vh - 60px);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    aside {
+        height: calc(70vh - 20px);
+        width: 20%;
+        font-size: xx-large;
+    }
+
+    #parentSection {
+        width: calc(80% - 10px);
+        height: calc(100% - 10px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5%;
+        overflow: scroll;
+        font-size: medium;
+        font-style: oblique;
+    }
+
+
+}
+
+
